@@ -1,19 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from '../layout/layout-home/navbar/navbar.component';
-import { SearchComponent } from '../layout/layout-home/navbar/search/search.component';
 import {FormsModule} from "@angular/forms";
-import {RouterModule} from "@angular/router";
+import { BrowseItemComponent } from './browse-item/browse-item.component';
+import { CatagoriesPaneComponent } from './catagories-pane/catagories-pane.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { ItemRecommendationComponent } from './item-detail/item-recommendation/item-recommendation.component';
+
 
 
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    RouterModule
+    FormsModule
   ],
-  declarations: [NavbarComponent, SearchComponent],
-  exports: [NavbarComponent, SearchComponent]
+  declarations: [
+    BrowseItemComponent,
+    CatagoriesPaneComponent,
+    ItemDetailComponent,
+    ItemRecommendationComponent
+  ],
+
+  exports: [
+  ]
 })
 export class SharedModule { }
