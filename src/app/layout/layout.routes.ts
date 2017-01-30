@@ -1,25 +1,24 @@
 import {Routes, RouterModule} from "@angular/router";
+import {userRoutes} from "../user/user.routes";
 import {NgModule} from "@angular/core";
-import {BrowseItemsPaneComponent} from "../general-pages/browse-items-pane/browse-items-pane.component";
+import {LayoutHomeComponent} from "./layout-home/layout-home.component";
 
 
-export const appRoutes: Routes = [
-  { path: 'items', component: BrowseItemsPaneComponent },
-  // { path: 'hero/:id',      component: HeroDetailComponent },
-  { path: '',
-    redirectTo: 'items',
-    pathMatch: 'full'
+export const layoutRoutes: Routes = [
+  {
+    path: '',
+    // component: LayoutHomeComponent,
+    children: [...userRoutes]
   },
-  { path: '**', redirectTo: 'items' }
+  { path: '**', redirectTo: 'items/category/oil' }
 ];
+
+export const layoutRouting = RouterModule.forChild(layoutRoutes);
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(layoutRoutes)
   ],
-  exports: [
-    RouterModule
-  ]
+  exports: [RouterModule]
 })
-
-export class layoutRoutes {}
+export class LayoutRoutingModule {}

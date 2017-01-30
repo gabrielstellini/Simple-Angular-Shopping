@@ -2,21 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-// import { AlertModule } from 'ng2-bootstrap';
 
 
 import { AppComponent } from './app.component';
 import {SharedModule} from "./shared/shared.module";
 import {LayoutModule} from "./layout/layout.module";
 
+import {RouterModule} from "@angular/router";
+// import {AppRouting} from "./app.routes";
+
 @NgModule({
   imports: [
-    // AlertModule.forRoot(),
+    // AppRouting,
     BrowserModule,
     FormsModule,
     HttpModule,
     SharedModule,
-    LayoutModule
+    LayoutModule,
+    RouterModule
   ],
   declarations: [
     AppComponent
