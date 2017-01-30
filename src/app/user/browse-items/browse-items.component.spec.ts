@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { BrowseItemsPaneComponent } from './browse-items-pane.component';
+import { BrowseItemsComponent } from './browse-items.component';
 
-describe('BrowseItemsPaneComponent', () => {
-  let component: BrowseItemsPaneComponent;
-  let fixture: ComponentFixture<BrowseItemsPaneComponent>;
+describe('BrowseItemsComponent', () => {
+  let component: BrowseItemsComponent;
+  let fixture: ComponentFixture<BrowseItemsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BrowseItemsPaneComponent ]
+      declarations: [ BrowseItemsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BrowseItemsPaneComponent);
+    fixture = TestBed.createComponent(BrowseItemsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
