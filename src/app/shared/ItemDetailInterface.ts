@@ -5,5 +5,7 @@ export interface ItemDetailInterface{
   title: string;
   author: string;
   imgUrl:string;
-  itemNum:number;
+  itemID:string;
+  price:number;
+  description: string;
 }
