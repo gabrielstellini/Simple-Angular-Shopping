@@ -1,13 +1,12 @@
-<div class="col-md-4 col-sm-6">
-  <a routerLink="/items">
+<div class="col-md-3">
+  <a (click)=changeURL()>
     <div class="preview-panel">
       <img src="{{itemDetails.imgUrl}}" class="img-responsive"
            alt="itemDetails.title">
       <div class="preview-panel-content">
         <h4>{{itemDetails.title}}</h4>
-        <p>by {{itemDetails.author}}</p>
+        <p>By {{itemDetails.author}}</p>
       </div>
     </div>
   </a>
 </div>
-

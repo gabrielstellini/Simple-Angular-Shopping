@@ -22,7 +22,7 @@ export class BrowseItemsComponent implements OnInit {
       title: 'Misty night',
       author: 'Leonid Afremov',
       imgUrl: 'http://i.imgur.com/nlvE8LG.jpg',
-      itemNum: 123
+      itemID: "123"
     }
 
     //http://stackoverflow.com/questions/12803604/javascript-array-concat-not-working-why
