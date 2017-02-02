@@ -1,3 +1,15 @@
-<p>
-  login works!
-</p>
+<div class="container">
+  <h1>Login</h1>
+  <h3>Don't have an account? <a routerLink="/register">Register Here</a></h3>
+  <form>
+    <div class="form-group">
+      <input type="email" class="form-control" class="formInput" placeholder="Email" [(ngModel)]="loginData.username"
+             name="usernameField">
+    </div>
+      <div class="form-group">
+      <input type="password" class="form-control" class="formInput" placeholder="Password" [(ngModel)]="loginData.password"
+             name="password">
+      </div>
+    <button (click)=attemptLogin() class="btn btn-default">Login</button>
+  </form>
+</div>
