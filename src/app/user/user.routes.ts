@@ -10,8 +10,7 @@ export const userRoutes: Routes = [
   {
     path: 'item/:id',
     component: BrowseItemDetailsComponent,
-  },
-  { path: '**', redirectTo: 'items/category/oil' }
+  }
 ];
 
 export const userRouting = RouterModule.forChild(userRoutes);
