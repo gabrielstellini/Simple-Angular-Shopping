@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ItemDetailInterface} from "../../shared/ItemDetailInterface";
+import {ItemDetailDto} from "../../shared/models/ItemDetailInterface";
+import {ItemService} from "../../shared/services/item.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-browse-items',
@@ -8,24 +10,24 @@ import {ItemDetailInterface} from "../../shared/ItemDetailInterface";
 })
 export class BrowseItemsComponent implements OnInit {
 
-  itemDetailArr: ItemDetailInterface[]= [];
+  category:string;
+  itemDetailArr: ItemDetailDto[]= [];
 
-  constructor(){
-    this.getItems();
+  constructor(
+    private itemService:ItemService,
+    private activatedRoute : ActivatedRoute,
+    private router: Router){
+
+    activatedRoute.params.subscribe(param => {
+      this.category = param['category'];
+      this.getItems();
+    });
   }
 
   ngOnInit(){
   }
 
   getItems(){
-    let itemDetailInterfaceInstance: ItemDetailInterface = <ItemDetailInterface> {
-      title: 'Misty night',
-      author: 'Leonid Afremov',
-      imgUrl: 'http://i.imgur.com/nlvE8LG.jpg',
-      itemID: "123"
-    }
-
-    //http://stackoverflow.com/questions/12803604/javascript-array-concat-not-working-why
-    this.itemDetailArr = this.itemDetailArr.concat([itemDetailInterfaceInstance,itemDetailInterfaceInstance,itemDetailInterfaceInstance]);
+    this.itemDetailArr = this.itemService.getAllItems(this.category);
   }
 }

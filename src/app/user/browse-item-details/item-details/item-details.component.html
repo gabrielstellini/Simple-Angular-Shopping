@@ -1,10 +1,12 @@
 <div class="col-sm-6">
 
   <div class = "left">
-    <img src="{{itemDetails.imgUrl}}" class="img-responsive"
+    <img [src]="itemDetails.imgUrl" class="img-responsive"
          alt="itemDetails.title">
     <h4>ADD T0 CART</h4>
-    <h4>€{{itemDetails.price}}</h4>
+
+    <!--TODO: EXPERIMENT WITH CURRENCY-->
+    <h4>€{{itemDetails.price | currency:'EUR':true:'4.2-2'}}</h4>
   </div>
 
   <!--TODO: link href to cart-->

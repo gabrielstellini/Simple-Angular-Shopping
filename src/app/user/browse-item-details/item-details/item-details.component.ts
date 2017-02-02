@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {ItemService} from "../../../shared/services/item.service";
-import {ItemDetailInterface} from "../../../shared/ItemDetailInterface";
+import {ItemDetailDto} from "../../../shared/models/ItemDetailInterface";
 
 @Component({
   selector: 'app-item-details',
@@ -11,7 +11,7 @@ import {ItemDetailInterface} from "../../../shared/ItemDetailInterface";
 export class ItemDetailsComponent implements OnInit {
 
   itemID:string;
-  itemDetails: ItemDetailInterface;
+  itemDetails: ItemDetailDto;
 
   constructor(private activatedRoute: ActivatedRoute,
               private itemService:ItemService) {

@@ -1,7 +1,7 @@
 <div class="col-md-3">
   <a (click)=changeURL()>
     <div class="preview-panel">
-      <img src="{{itemDetails.imgUrl}}" class="img-responsive"
+      <img [src]="itemDetails.imgUrl" class="img-responsive"
            alt="itemDetails.title">
       <div class="preview-panel-content">
         <h4>{{itemDetails.title}}</h4>

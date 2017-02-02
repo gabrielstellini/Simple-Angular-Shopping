@@ -1,5 +1,7 @@
 <app-nav-categories></app-nav-categories>
 <app-browse-item *ngFor="let itemDetail of itemDetailArr"
-  [itemDetails]= "itemDetail"
+  [itemDetails]= "itemDetail">
+</app-browse-item>
 
-></app-browse-item>
+<!--TODO: used for debugging remove in final build-->
+<h1>The current category selected is: {{category}}</h1>

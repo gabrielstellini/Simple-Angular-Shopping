@@ -1,6 +1,6 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {Router} from "@angular/router";
-import {ItemDetailInterface} from "../ItemDetailInterface";
+import {ItemDetailDto} from "../models/ItemDetailInterface";
 
 @Component({
   selector: 'app-browse-item',
@@ -10,7 +10,7 @@ import {ItemDetailInterface} from "../ItemDetailInterface";
 
 export class BrowseItemComponent implements OnInit {
 
-  @Input() itemDetails: ItemDetailInterface;
+  @Input() itemDetails: ItemDetailDto;
 
   constructor(private router: Router) {
   }
