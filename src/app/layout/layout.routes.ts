@@ -1,14 +1,16 @@
 import {Routes, RouterModule} from "@angular/router";
 import {userRoutes} from "../user/user.routes";
 import {NgModule} from "@angular/core";
-import {LayoutHomeComponent} from "./layout-home/layout-home.component";
+import {authRoutes} from "../auth/auth.routes";
+import {cartRoutes} from "../cart/cart.routes";
 
 
 export const layoutRoutes: Routes = [
   {
     path: '',
-    // component: LayoutHomeComponent,
-    children: [...userRoutes]
+    children: [...userRoutes,
+      ...authRoutes,
+      ...cartRoutes]
   },
   { path: '**', redirectTo: 'items/category/oil' }
 ];
