@@ -1,24 +1,53 @@
 import { Injectable } from '@angular/core';
-import {ItemDetailInterface} from "../ItemDetailInterface";
+import {ItemDetailDto} from "../models/ItemDetailInterface";
 
 
 @Injectable()
 export class ItemService {
 
-  constructor() { }
 
-  getItem(itemID:string):ItemDetailInterface{
-    //TODO: DATABASE QUERY HERE
-
-    let demoItem : ItemDetailInterface = {
+  private items :Array<ItemDetailDto> = [ {
+    title: 'Misty night',
+    author: 'Leonid Afremov',
+    imgUrl: 'http://i.imgur.com/nlvE8LG.jpg',
+    itemID: "1",
+    price: 120,
+    description: "MAMMA MIA this painting iz vonderful",
+    category: 'oil'
+  },
+    {
       title: 'Misty night',
       author: 'Leonid Afremov',
       imgUrl: 'http://i.imgur.com/nlvE8LG.jpg',
-      itemID: "123",
-      price: 120,
-      description: "MAMMA MIA this painting iz vonderful"
-    }
+      itemID: "2",
+      price: 22,
+      description: "MAMMA MIA this painting iz vonderful",
+      category: 'oil'
+    },
+    {
+      title: 'Misty night',
+      author: 'Leonid Afremov',
+      imgUrl: 'http://i.imgur.com/nlvE8LG.jpg',
+      itemID: "3",
+      price: 55,
+      description: "MAMMA MIA this painting iz vonderful",
+      category: 'oil'
+    },
 
-    return demoItem;
+
+
+  ];
+
+
+  constructor() { }
+
+  getItem(itemID:string):ItemDetailDto{
+    //TODO: DATABASE QUERY HERE
+
+    return this.items.find(item => item.itemID === itemID);
+  }
+
+  getAllItems(category?:string):ItemDetailDto[]{
+    return this.items.filter(item => item.category === category);
   }
 }
