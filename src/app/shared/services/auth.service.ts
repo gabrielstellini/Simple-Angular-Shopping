@@ -40,4 +40,11 @@ export class AuthService {
     };
   }
 
+  isLoggedIn():boolean{
+    if(this.currUser.username === "" || this.currUser.username == null){
+      return false;
+    }
+    return true;
+  }
+
 }

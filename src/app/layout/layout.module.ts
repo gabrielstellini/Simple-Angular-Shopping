@@ -7,13 +7,15 @@ import {SearchComponent} from "./layout-home/navbar/search/search.component";
 import {LayoutHomeComponent} from "./layout-home/layout-home.component";
 import {layoutRoutes, LayoutRoutingModule} from "./layout.routes";
 import { RouterModule} from "@angular/router";
-
-
+import {AuthModule} from "../auth/auth.module";
+import {CartModule} from "../cart/cart.module";
 
 @NgModule({
   imports: [
     CommonModule,
     UserModule,
+    AuthModule,
+    CartModule,
     LayoutRoutingModule,
     RouterModule
   ],

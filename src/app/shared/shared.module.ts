@@ -6,6 +6,8 @@ import { BrowseItemComponent } from './browse-item/browse-item.component';
 import { NavCategoriesComponent } from './nav-categories/nav-categories.component';
 import {RouterModule} from "@angular/router";
 import {ItemService} from "./services/item.service";
+import {AuthGuardService} from "./services/auth-guard.service";
+import {AuthService} from "./services/auth.service";
 
 
 
@@ -24,7 +26,9 @@ import {ItemService} from "./services/item.service";
     NavCategoriesComponent
   ],
   providers:[
-    ItemService
+    ItemService,
+    AuthGuardService,
+    AuthService
   ]
 })
 export class SharedModule { }
