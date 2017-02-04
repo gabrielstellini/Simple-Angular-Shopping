@@ -6,12 +6,18 @@ import {cartRoutes} from "../cart/cart.routes";
 
 
 export const layoutRoutes: Routes = [
+
+  { path: '' , redirectTo: 'items/category/oil', pathMatch: 'full'},
+
   {
     path: '',
-    children: [...userRoutes,
+    children: [
+      ...userRoutes,
       ...authRoutes,
-      ...cartRoutes]
+      ...cartRoutes
+    ]
   },
+
   { path: '**', redirectTo: 'items/category/oil' }
 ];
 
