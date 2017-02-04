@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {UserDetailInterface} from "../models/UserDetailInterface";
 
 export interface userData {
   username: string;
@@ -17,8 +18,9 @@ export class AuthService {
   }
 
   login(email:string, password:string):number{
-    //TODO: AttemFor debugging purposes -pt database login here
-    //Assume username 1 is normal, username 2 is admin
+    //TODO: database login here
+    //TODO: Success/fail database communication here
+    //Assume username 1 is a normal user, username 2 is an admin
 
     if(email === "demo@123.123"){
       this.currUser.username = "1";
@@ -50,6 +52,10 @@ export class AuthService {
       return false;
     }
     return true;
+  }
+
+  register(registerData:UserDetailInterface){
+    //TODO: database user register here
   }
 
 }
