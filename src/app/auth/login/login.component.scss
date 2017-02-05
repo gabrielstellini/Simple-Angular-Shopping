@@ -1,3 +1,115 @@
-.formInput{
+.container
+{
+  height: 80%;
+}
+
+.login-box
+{
+  position: relative;
+  width: 60%;
+  height: 80%;
+  margin-left: 22%;
+  margin-right: 30%;
+  margin-top: 8%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  z-index: 1;
+}
+
+h1
+{
+  font-size: 30px;
+  font-family: "Gloucester MT Extra Condensed";
+}
+
+h3
+{
+  font-size: 20px;
+  position: relative;
+  margin-left: 15%;
+}
+
+.top-div
+{
+  position: relative;
+  bottom: 20%;
+  margin-left: 2%;
+}
+
+
+.loginButton
+{
+  background-color: #0b2943;
+  color: white;
+  font-size: 25px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-left: 30%;
+}
+
+.emailClass
+{
+  position: relative;
+  margin-top: 25%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 0 !important;
+}
+
+//.passClass
+//{
+//  position: relative;
+//  margin-top: 10%;
+//  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+//}
+
+.passClass
+{
+  position: relative;
+  margin-top: 10%;
+  border-radius: 0 !important;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.emailClass:focus, .emailClass:active
+{
+  outline: none !important;
+}
+
+//.passClass:focus
+//{
+//  outline: none;
+//  border: solid #cccccc !important;
+//  -webkit-box-shadow: none !important;
+//  -moz-box-shadow: none !important;
+//
+//  position: relative;
+//  margin-top: 10%;
+//
+//  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
+//  border-radius: 0 !important;
+//}
+
+.loginButton:focus,.loginButton:active
+{
+  outline: none !important;
+}
+
+.loginForm
+{
+  position: relative;
+  margin-right: 5%;
+  margin-left: 18%;
+}
+
+.blue-line-div
+{
+  position: relative;
+  height: 80px;
+  width: 655px;
+  z-index: 2;
+  border-bottom-color: #0b2943!important;
+  outline: #0b2943!important;
 
 }
+
+
+
