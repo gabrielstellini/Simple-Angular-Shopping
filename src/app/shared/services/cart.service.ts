@@ -52,11 +52,8 @@ export class CartService {
     }
     else{
       //TODO: GET query with authguid as a post parameter
-
       //TODO: remove in final
-
       return this.cartItems;
     }
   }
-
 }
