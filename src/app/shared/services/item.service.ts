@@ -1,11 +1,8 @@
 import { Injectable } from '@angular/core';
 import {ItemDetailDto} from "../models/ItemDetailInterface";
 
-
 @Injectable()
 export class ItemService {
-
-
   private items :Array<ItemDetailDto> = [ {
     title: 'Misty night',
     author: 'Leonid Afremov',
@@ -33,11 +30,7 @@ export class ItemService {
       description: "MAMMA MIA this painting iz vonderful",
       category: 'oil'
     },
-
-
-
   ];
-
 
   constructor() { }
 
