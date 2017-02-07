@@ -33,21 +33,28 @@ export class ItemService {
       description: "MAMMA MIA this painting iz vonderful",
       category: 'oil'
     },
-
-
-
   ];
-
 
   constructor() { }
 
   getItem(itemID:string):ItemDetailDto{
     //TODO: DATABASE QUERY HERE
-
     return this.items.find(item => item.itemID === itemID);
   }
 
   getAllItems(category?:string):ItemDetailDto[]{
     return this.items.filter(item => item.category === category);
+  }
+
+  getItemsByID(itemIDs:string[]):ItemDetailDto[]{
+    //TODO: DATABASE QUERY HERE
+
+    let result:ItemDetailDto[] = [];
+    debugger;
+    for(let i=0;i<itemIDs.length;i++){
+        result.push(this.items.find(item => item.itemID === itemIDs[i]));
+    }
+    debugger;
+    return result;
   }
 }
