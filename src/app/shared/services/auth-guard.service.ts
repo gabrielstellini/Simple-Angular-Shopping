@@ -8,7 +8,6 @@ export class AuthGuardService implements CanActivateChild, CanActivate{
   constructor(private auth: AuthService, private router: Router) {}
 
   canActivateChild() {
-    debugger;
     if (!this.auth.isLoggedIn()) {
       this.router.navigate(['login']);
       return false;
@@ -17,18 +16,10 @@ export class AuthGuardService implements CanActivateChild, CanActivate{
   }
 
   canActivate() {
-    debugger;
     if (!this.auth.isLoggedIn()) {
       this.router.navigate(['login']);
       return false;
     }
     return true;
   }
-
-
-
 }
-// { path: '', component: PrivateMainContentComponent, canActivateChild: [AuthGuard],
-//   children: [
-//   ...ReportsRoutes]
-//

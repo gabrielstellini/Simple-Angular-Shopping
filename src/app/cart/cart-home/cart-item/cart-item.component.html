@@ -1,3 +1,11 @@
-<p>
-  cart-item works!
-</p>
+<!--TODO: Button? Image with anchor? Whoever does this part, just make sure to put (click)="removeItem()" as a tag to whatever element you so please -->
+<button (click)="removeItem()">X</button>
+
+<div class="imageDiv">
+  <img [src]="item.imgUrl">
+  <h3>{{item.title}}</h3>
+  <h4>By {{item.author}}</h4>
+</div>
+
+<p>{{item.description}}</p>
+<h1>{{item.price | currency:'EUR':true:'1.1-2'}}</h1>

@@ -8,6 +8,7 @@ import {RouterModule} from "@angular/router";
 import {ItemService} from "./services/item.service";
 import {AuthGuardService} from "./services/auth-guard.service";
 import {AuthService} from "./services/auth.service";
+import {CartService} from "./services/cart.service";
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import {AuthService} from "./services/auth.service";
   providers:[
     ItemService,
     AuthGuardService,
-    AuthService
+    AuthService,
+    CartService
   ]
 })
 export class SharedModule { }

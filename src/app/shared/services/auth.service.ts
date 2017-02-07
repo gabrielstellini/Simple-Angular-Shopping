@@ -22,12 +22,11 @@ export class AuthService {
     //TODO: Success/fail database communication here
     //Assume username 1 is a normal user, username 2 is an admin
 
-    if(email === "demo@123.123"){
+    if(email === "1@1.1"){
       this.currUser.username = "1";
       this.currUser.isAdmin = false;
       this.currUser.authGuid = "e58607e4-af33-46ed-8fee-42225c34c2c5";
       return 202;
-
     }
     else if(email === "demo@321.321"){
       this.currUser.username = "2";

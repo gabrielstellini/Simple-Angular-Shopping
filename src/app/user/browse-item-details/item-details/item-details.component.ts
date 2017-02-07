@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {ItemService} from "../../../shared/services/item.service";
 import {ItemDetailDto} from "../../../shared/models/ItemDetailInterface";
+import {CartService} from "../../../shared/services/cart.service";
 
 @Component({
   selector: 'app-item-details',
@@ -14,7 +15,8 @@ export class ItemDetailsComponent implements OnInit {
   itemDetails: ItemDetailDto;
 
   constructor(private activatedRoute: ActivatedRoute,
-              private itemService:ItemService) {
+              private itemService:ItemService,
+              private cartService: CartService) {
 
 
     activatedRoute.params.subscribe(param => {
@@ -24,7 +26,11 @@ export class ItemDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.itemDetails = this.itemService.getItem(this.itemID);
-    debugger;
+  }
+
+  addToCart(){
+    this.cartService.addToCart(this.itemID);
+    console.log(this.cartService.findAll());
   }
 
 }
