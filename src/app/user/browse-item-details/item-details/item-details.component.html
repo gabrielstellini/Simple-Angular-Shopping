@@ -3,18 +3,17 @@
   <div class = "left">
     <img [src]="itemDetails.imgUrl" class="img-responsive"
          alt="itemDetails.title">
-    <h4>ADD T0 CART</h4>
+    <button (click)="addToCart()">ADD T0 CART</button>
 
-    <!--TODO: EXPERIMENT WITH CURRENCY-->
-    <h4>€{{itemDetails.price | currency:'EUR':true:'4.2-2'}}</h4>
+    <h4>{{itemDetails.price | currency:'EUR':true:'1.1-2'}}</h4>
   </div>
 
   <!--TODO: link href to cart-->
 
   <div class="details">
     <div class="title">
-      <a href="#"><h4>{{itemDetails.title}}</h4></a>
-      <a href="#"><p>By {{itemDetails.author}}</p></a>
+      <h4>{{itemDetails.title}}</h4>
+      <p>By {{itemDetails.author}}</p>
     </div>
 
     <div class="title">
@@ -26,9 +25,9 @@
     <div class="form-group">
       <label for="sel1">Available sizes:</label>
       <select class="form-control" id="sel1">
-        <option>4" x 6"<span>S</span></option>
-        <option>8" x 10"<span>M</span></option>
-        <option>18" x 24"<span>L</span></option>
+        <option>4" x 6" <span>S</span></option>
+        <option>8" x 10" <span>M</span></option>
+        <option>18" x 24" <span>L</span></option>
       </select>
     </div>
   </div>
