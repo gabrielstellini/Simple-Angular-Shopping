@@ -11,7 +11,6 @@ export const cartRoutes: Routes = [
   {
     path: 'cart',
     component: CartHomeComponent,
-    //TODO: remove this Authguard, this is used to test authgoard service!
     canActivate: [AuthGuardService],
   },
   {
