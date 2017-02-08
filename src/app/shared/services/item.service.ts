@@ -47,11 +47,9 @@ export class ItemService {
     //TODO: DATABASE QUERY HERE
 
     let result:ItemDetailDto[] = [];
-    debugger;
     for(let i=0;i<itemIDs.length;i++){
         result.push(this.items.find(item => item.itemID === itemIDs[i]));
     }
-    debugger;
     return result;
   }
 }
