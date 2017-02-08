@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import {AuthService} from "./auth.service";
 import {Router} from "@angular/router";
 import {ItemDetailDto} from "../models/ItemDetailInterface";
+import {ItemService} from "./item.service";
 
 @Injectable()
 export class CartService {
 
   constructor(private authService:AuthService,
-              private router:Router) { }
+              private router:Router,
+              private itemService:ItemService) { }
 
   //TODO: Remove cartItems, it is being used as a mock of the service
   cartItems: string[] = [];
@@ -37,11 +39,14 @@ export class CartService {
       //TODO: POST query with item to remove and with authguid as a post parameter
       // this.authService.currUser.authGuid
 
-      //TODO: remove in final
+      //TODO: remove in final - should be handled in DB
       let index = this.cartItems.indexOf(itemID);
+      debugger;
       if (index > -1) {
-        this.cartItems= this.cartItems.splice(index, 1);
+        this.cartItems.splice(index, 1);
+        debugger;
       }
+      console.log(this.cartItems)
 
     }
   }
@@ -55,5 +60,21 @@ export class CartService {
       //TODO: remove in final
       return this.cartItems;
     }
+  }
+
+  getItems():ItemDetailDto[]{
+    let itemIDs:string[] = this.findAll();
+    let items:ItemDetailDto[] = this.itemService.getItemsByID(itemIDs)
+    return items;
+  }
+
+  calculateTotalPrice():number{
+    let result:number = 0;
+    let items:ItemDetailDto[] = this.getItems();
+
+    for(let i=0;i<items.length;i++){
+      result+=items[i].price;
+    }
+    return result;
   }
 }
