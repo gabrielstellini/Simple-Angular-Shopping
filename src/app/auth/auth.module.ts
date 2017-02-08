@@ -12,8 +12,7 @@ import {authRouting} from "./auth.routes";
     CommonModule,
     SharedModule,
     RouterModule,
-    FormsModule,
-    authRouting
+    FormsModule
   ],
   declarations: [LoginComponent, RegisterComponent],
   exports: [LoginComponent, RegisterComponent]
