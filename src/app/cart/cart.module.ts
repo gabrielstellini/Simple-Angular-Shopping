@@ -7,6 +7,7 @@ import {FormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import {SharedModule} from "../shared/shared.module";
 import {cartRouting} from "./cart.routes";
+import { CreditCardScreenComponent } from './credit-card-screen/credit-card-screen.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,18 @@ import {cartRouting} from "./cart.routes";
     FormsModule,
     cartRouting
   ],
-  declarations: [CartHomeComponent, CartItemComponent, CartDetailComponent]
+  declarations: [
+    CartHomeComponent,
+    CartItemComponent,
+    CartDetailComponent,
+    CreditCardScreenComponent
+  ],
+  exports:[
+    CartHomeComponent,
+    CartItemComponent,
+    CartDetailComponent,
+    CreditCardScreenComponent
+  ]
+
 })
 export class CartModule { }
