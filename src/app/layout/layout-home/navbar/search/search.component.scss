@@ -17,7 +17,9 @@
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   transition: all .5s ease;
-  float: right;
+  //float: right;
+  position: relative;
+  top: 10px;
   outline: none;
 }
 .search:focus {
