@@ -8,11 +8,26 @@ import {ItemDetailDto} from "../../shared/models/ItemDetailInterface";
 })
 export class AddItemComponent implements OnInit {
 
-  itemDetail:ItemDetailDto;
+  itemDetail:ItemDetailDto =
+    {
+    title: "",
+    author: "",
+    imgUrl: '',
+    itemID: "",
+    price: undefined,
+    description: "",
+    category: undefined
+  };
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  attemptAdd(){
+    // this.itemDetail
+    //  TODO: ADD validation
+    // TODO: ADD add service which sends new item to database
   }
 
 }

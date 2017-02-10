@@ -9,12 +9,16 @@ import { BrowseItemDetailsComponent } from './browse-item-details/browse-item-de
 import {ItemDetailsComponent} from "./browse-item-details/item-details/item-details.component";
 import {ItemRecommendationComponent} from "./browse-item-details/item-details/item-recommendation/item-recommendation.component";
 import { AddItemComponent } from './add-item/add-item.component';
+import {FormsModule} from "@angular/forms";
+import {BrowserModule} from "@angular/platform-browser";
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    BrowserModule
   ],
   declarations: [
     AboutComponent,
