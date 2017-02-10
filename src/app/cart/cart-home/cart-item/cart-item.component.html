@@ -1,11 +1,15 @@
-<!--TODO: Button? Image with anchor? Whoever does this part, just make sure to put (click)="removeItem()" as a tag to whatever element you so please -->
-<button (click)="removeItem()">X</button>
-
 <div class="imageDiv">
-  <img [src]="item.imgUrl">
-  <h3>{{item.title}}</h3>
-  <h4>By {{item.author}}</h4>
+  <div>
+    <a (click)="removeItem()"><img class = "cross" src="../../../../assets/cross.jpg"></a>
+    <img class = "painting" [src]="item.imgUrl">
+    <h1 class = "painting-title">{{item.title}}</h1>
+    <h4 class = "painting-author">By {{item.author}}</h4>
+  </div>
+
+  <div class = "right-details">
+    <h1 class = "painting-price">{{item.price | currency:'EUR':true:'1.1-2'}}</h1>
+    <h3 class = "painting-description">{{item.description}}</h3>
+  </div>
 </div>
 
-<p>{{item.description}}</p>
-<h1>{{item.price | currency:'EUR':true:'1.1-2'}}</h1>
+

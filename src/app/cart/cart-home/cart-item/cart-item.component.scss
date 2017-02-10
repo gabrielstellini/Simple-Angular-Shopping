@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'gloucester-mt-extra-condensed';
+  src: url("../../../../assets/gloucester-mt-extra-condensed.TTF") format('truetype');
+}
+
+.imageDiv{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  width: 750px;
+  height: 280px;
+  position: relative;
+  left: 400px;
+  margin-bottom: 20px;
+}
+
+.painting{
+  height: 40%;
+  width: 40%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.painting-title{
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
+
+.painting-price{
+  //font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.painting-author{
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
+
+.cross{
+  float:right;
+}
+
+.right-details{
+  position: relative;
+  left: 320px;
+  bottom: 270px;
+}

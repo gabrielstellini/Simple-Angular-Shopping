@@ -1,2 +1,6 @@
-<h1>TOTAL: {{totalCost | currency:'EUR':true:'1.1-2'}}</h1>
-<h1><a routerLink="/pay">CHECK OUT</a></h1>
+<form>
+  <div class="form-group">
+      <h1 class = "total">TOTAL: {{totalCost | currency:'EUR':true:'1.1-2'}}</h1>
+      <h1><a class = "check-out" routerLink="/pay">CHECK OUT</a></h1>
+  </div>
+</form>

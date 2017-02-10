@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'gloucester-mt-extra-condensed';
+  src: url("../../../../assets/gloucester-mt-extra-condensed.TTF") format('truetype');
+}
+
+.check-out{
+  font-size: 30px;
+  color: black;
+  position: relative;
+  left: 400px;
+  bottom: 40px;
+  //font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.total{
+  color: black;
+  position: relative;
+  left: 920px;
+  top: 22px;
+  //font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
+
+}
+
+.right{
+position: relative;
+  right: 20px;
+}
