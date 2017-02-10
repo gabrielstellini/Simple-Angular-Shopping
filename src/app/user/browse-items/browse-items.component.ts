@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ItemDetailDto} from "../../shared/models/ItemDetailInterface";
 import {ItemService} from "../../shared/services/item.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-browse-items',
@@ -15,8 +15,7 @@ export class BrowseItemsComponent implements OnInit {
 
   constructor(
     private itemService:ItemService,
-    private activatedRoute : ActivatedRoute,
-    private router: Router){
+    private activatedRoute : ActivatedRoute){
 
     activatedRoute.params.subscribe(param => {
       this.category = param['category'];
