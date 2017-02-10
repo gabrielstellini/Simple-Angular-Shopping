@@ -1,0 +1,32 @@
+<!--<div class="row">-->
+  <div [disabled]="notificationType !== NotificationType.INFO" class="col-lg-12">
+    <div class="bs-component">
+      <div class="alert alert-dismissible alert-info">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <h4>{{notificationTitle}}</h4>
+        <p>{{notificationText}}</p>
+      </div>
+    </div>
+  </div>
+<!--</div>-->
+
+
+<div [disabled]="notificationType !== NotificationType.DANGER" class="col-lg-12">
+  <div class="bs-component">
+    <div class="alert alert-dismissible alert-danger">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <h4>{{notificationTitle}}</h4>
+      <p>{{notificationText}}</p>
+    </div>
+  </div>
+</div>
+
+<div [disabled]="notificationType !== NotificationType.SUCCESS" class="col-lg-12">
+  <div class="bs-component">
+    <div class="alert alert-dismissible alert-success">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <h4>{{notificationTitle}}</h4>
+      <p>{{notificationText}}</p>
+    </div>
+  </div>
+</div>
