@@ -1,0 +1,40 @@
+a{
+  font-family: "Times New Roman";
+  color: black !important;
+  font-size: 25px;
+
+}
+
+.mainMenu:hover
+{
+  color: #7dc6e7 !important;
+}
+
+.mainMenu:focus {
+ color: #7dc6e7 !important;
+}
+
+.mainMenu:active {
+  color: #7dc6e7 !important;
+}
+
+.mainMenu
+{
+  position: relative;
+  top: 10px;
+}
+
+.container{
+ padding-left: 0px ;
+  margin-left: 0px ;
+  padding-right: 0px ;
+  margin-right: 0px ;
+
+
+}
+
+//.active{
+//  color: #082b41 !important;
+//}
+
+
