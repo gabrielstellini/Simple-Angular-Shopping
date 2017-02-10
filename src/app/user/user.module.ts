@@ -8,6 +8,7 @@ import {RouterModule} from "@angular/router";
 import { BrowseItemDetailsComponent } from './browse-item-details/browse-item-details.component';
 import {ItemDetailsComponent} from "./browse-item-details/item-details/item-details.component";
 import {ItemRecommendationComponent} from "./browse-item-details/item-details/item-recommendation/item-recommendation.component";
+import { AddItemComponent } from './add-item/add-item.component';
 
 @NgModule({
   imports: [
@@ -21,14 +22,16 @@ import {ItemRecommendationComponent} from "./browse-item-details/item-details/it
     BrowseItemsComponent,
     ItemDetailsComponent,
     BrowseItemDetailsComponent,
-    ItemRecommendationComponent
+    ItemRecommendationComponent,
+    AddItemComponent
   ],
   exports: [
     AboutComponent,
     ContactComponent,
     BrowseItemsComponent,
     BrowseItemDetailsComponent,
-    ItemRecommendationComponent
+    ItemRecommendationComponent,
+    AddItemComponent
   ]
 })
 export class UserModule { }
