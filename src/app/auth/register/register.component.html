@@ -1,61 +1,93 @@
 <div class="container">
+  <div class="register">
+    <!--TODO: Add validation of user input-->
+    <!--TODO: Add API method for registering online-->
+    <div class="register-box">
 
-  <!--TODO: Add validation of user input-->
-  <!--TODO: Add API method for registering online-->
+      <div class="col-xs-6 col-md-4">
+        <h1>REGISTER</h1>
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <h3><a routerLink="/login">Return back to login</a></h3>
+      </div>
 
-  <div class="title">
-    <h1>REGISTER</h1>
-    <h3><a routerLink="/login">Return back to login</a></h3>
+    </div>
+
+    <div class="form_div">
+      <form>
+
+        <div class="form-group">
+          <div>
+            <input type="text" class="form-control formInput col-md-6 inputClass" placeholder="Name" [(ngModel)]="registerData.name"
+                   name="registerName" required >
+          </div>
+          <div>
+            <input type="text" class="form-control formInput col-md-6 inputClass" placeholder="Surname" [(ngModel)]="registerData.surname"
+                   name="registerSurname" required >
+          </div>
+        </div>
+
+
+          <div class="form-group">
+            <div>
+              <input type="text" class="form-control formInput col-md-6 inputClass" placeholder="Email" [(ngModel)]="registerData.email"
+                     name="registerEmail" required  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+            </div>
+            <div>
+              <input type="text" pattern="\d*" class="form-control formInput col-md-6 inputClass" placeholder="Telephone" [(ngModel)]="registerData.telephone"
+                     name="registerTelephone" required minlength="8" maxlength="15">
+            </div>
+          </div>
+
+
+        <div class="form-group">
+          <select class="form-control col-md-6 inputClass country" [(ngModel)]="registerData.country" name="registerCountry">
+            <option *ngFor="let country of country_list" >{{country}}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <input type="text" class="form-control formInput col-md-6 inputClass" placeholder="City" [(ngModel)]="registerData.city"
+                   name="registerCity" required>
+          </div>
+          <div>
+            <input type="text" class="form-control formInput col-md-6 inputClass" placeholder="Street" [(ngModel)]="registerData.street"
+                   name="registerStreet" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <input type="number" class="form-control formInput col-md-6 inputClass" placeholder="House Number" [(ngModel)]="registerData.houseNumber"
+                   name="registerHouseNumber" required>
+          </div>
+          <div>
+            <input type="text" class="form-control formInput col-md-6 inputClass" placeholder="Postcode" [(ngModel)]="registerData.postcode"
+                   name="registerPostcode" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <input type="text" class="form-control formInput col-md-6 inputClass userName" placeholder="Username" [(ngModel)]="registerData.username"
+                   name="registerUsername" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div>
+            <input type="password" class="form-control formInput col-md-6 inputClass" placeholder="Password" [(ngModel)]="registerData.password"
+                   name="registerPassword" required>
+          </div>
+          <div>
+            <input type="password" class="form-control formInput col-md-6 inputClass" placeholder="Confirm password" [(ngModel)]="registerData.confirmPassword"
+                   name="registerConfirmPassword" required>
+          </div>
+        </div>
+
+        <button (click)=attemptRegister() class="btn waves-effect waves-light col-xs-6 col-md-4 registerButton">REGISTER</button>
+      </form>
+    </div>
   </div>
-
-  <form>
-
-    <div class="form-group">
-      <input type="text" class="form-control formInput" placeholder="Name" [(ngModel)]="registerData.name"
-             name="registerName" required>
-      <input type="text" class="form-control formInput" placeholder="Surname" [(ngModel)]="registerData.surname"
-             name="registerSurname" required>
-    </div>
-
-    <div class="form-group">
-      <input type="text" class="form-control formInput" placeholder="Email" [(ngModel)]="registerData.email"
-             name="registerEmail" required  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
-      <input type="text" pattern="\d*" class="form-control formInput" placeholder="Telephone" [(ngModel)]="registerData.telephone"
-             name="registerTelephone" required minlength="8" maxlength="15">
-    </div>
-
-    <div class="form-group">
-      <select [(ngModel)]="registerData.country" name="registerCountry">
-        <option *ngFor="let country of country_list" >{{country}}</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <input type="text" class="form-control formInput" placeholder="City" [(ngModel)]="registerData.city"
-             name="registerCity" required>
-      <input type="text" class="form-control formInput" placeholder="Street" [(ngModel)]="registerData.street"
-             name="registerStreet" required>
-    </div>
-
-    <div class="form-group">
-      <input type="number" class="form-control formInput" placeholder="House Number" [(ngModel)]="registerData.houseNumber"
-             name="registerHouseNumber" required>
-      <input type="text" class="form-control formInput" placeholder="Postcode" [(ngModel)]="registerData.postcode"
-             name="registerPostcode" required>
-    </div>
-
-    <div class="form-group">
-      <input type="text" class="form-control formInput" placeholder="Username" [(ngModel)]="registerData.username"
-             name="registerUsername" required>
-    </div>
-
-    <div class="form-group">
-      <input type="password" class="form-control formInput" placeholder="Password" [(ngModel)]="registerData.password"
-             name="registerPassword" required>
-      <input type="password" class="form-control formInput" placeholder="Confirm password" [(ngModel)]="registerData.confirmPassword"
-             name="registerConfirmPassword" required>
-    </div>
-
-    <button (click)=attemptRegister() class="btn btn-default">REGISTER</button>
-  </form>
 </div>

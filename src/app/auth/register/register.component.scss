@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'gloucester-mt-extra-condensed';
+  src: url("../../../assets/gloucester-mt-extra-condensed.TTF") format('truetype');
+}
+
+
+.register
+{
+  position: relative;
+  width: 850px;
+  height: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1
+{
+  font-size: 40px;
+  font-family: "gloucester-mt-extra-condensed","Times New Roman", Times, serif;
+}
+
+h3
+{
+  font-size: 20px;
+  position: relative;
+  float: right;
+  padding-top: 8px;
+}
+
+.register-box
+{
+  position: relative;
+  width: 800px;
+  height: 100px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #0b2943;
+}
+
+.form_div
+{
+  width: 850px;
+  height: 600px;
+  margin-top: auto;
+}
+
+.inputClass
+{
+  outline: none;
+  border: solid 1px #cccccc;
+
+  position: relative;
+  margin: 30px 20px 0px 20px;
+  border-radius: 0;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  width: 380px;
+}
+
+.userName
+{
+  width: 800px;
+}
+
+.country
+{
+  width: 800px;
+}
+
+.registerButton
+{
+  background-color: #0b2943;
+  color: white;
+  font-size: 25px;
+  margin-top: 40px;
+  margin-left: 30%;
+}
+
+.registerButton:active
+{
+  background-color: #0c1034;
+}
