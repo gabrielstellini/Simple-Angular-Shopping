@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, OnChanges, SimpleChanges} from '@angular/core';
 import {RecommendedItemService} from "../../../../shared/services/recommended-item.service";
 import {ItemDetailDto} from "../../../../shared/models/ItemDetailInterface";
 
@@ -7,7 +7,7 @@ import {ItemDetailDto} from "../../../../shared/models/ItemDetailInterface";
   templateUrl: 'item-recommendation.component.html',
   styleUrls: ['item-recommendation.component.scss']
 })
-export class ItemRecommendationComponent implements OnInit {
+export class ItemRecommendationComponent implements OnChanges {
 
   @Input() item:ItemDetailDto;
   items:ItemDetailDto[] = [];
@@ -15,7 +15,7 @@ export class ItemRecommendationComponent implements OnInit {
   constructor(private recommendedItemService:RecommendedItemService) {
   }
 
-  ngOnInit() {
+  ngOnChanges() {
     this.items = this.getItems();
   }
 
