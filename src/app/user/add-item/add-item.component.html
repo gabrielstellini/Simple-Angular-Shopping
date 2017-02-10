@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="login-box">
+  <div class="addItem-box">
     <div class="row top-div">
 
       <div class="title-div">
@@ -8,23 +8,26 @@
         </div>
       </div>
 
-      <form>
-        <div class="form-group col-md-8 loginForm">
-          <input type="text" class="form-control formInput inputClass" placeholder="Title" [(ngModel)]="itemDetail.title"
-                 name="addTitle">
+      <div class="form_div">
+        <form>
+          <div class="form-group col-md-8 loginForm">
+            <input type="text" class="form-control formInput inputClass" placeholder="Title" [(ngModel)]="itemDetail.title"
+                   name="addTitle">
 
-          <input type="text" class="form-control formInput inputClass" placeholder="Description" [(ngModel)]="itemDetail.description"
-                 name="addDescription">
+            <input type="text" class="form-control formInput inputClass" placeholder="Description" [(ngModel)]="itemDetail.description"
+                   name="addDescription">
 
-          <input type="text" class="form-control formInput inputClass" placeholder="Image link" [(ngModel)]="itemDetail.imgUrl"
-                 name="addImgURL">
+            <input type="text" class="form-control formInput inputClass" placeholder="Image link" [(ngModel)]="itemDetail.imgUrl"
+                   name="addImgURL">
 
-          <input type="number" class="form-control formInput inputClass" placeholder="Price" [(ngModel)]="itemDetail.price"
-                 name="addPrice">
+            <input type="number" class="form-control formInput inputClass" placeholder="Price" [(ngModel)]="itemDetail.price"
+                   name="addPrice">
 
-          <button (click)=attemptAdd() class="btn waves-effect waves-light col-xs-6 col-md-4 submitButton">Submit</button>
-        </div>
-      </form>
+            <button (click)=attemptAdd() class="btn waves-effect waves-light col-xs-6 col-md-4 submitButton">Submit</button>
+          </div>
+        </form>
+      </div>
+
     </div>
   </div>
 </div>
