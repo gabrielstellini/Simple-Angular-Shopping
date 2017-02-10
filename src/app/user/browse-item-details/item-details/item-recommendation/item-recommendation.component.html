@@ -1,3 +1,5 @@
-<p>
-  item-recommendation works!
-</p>
+<h1>Recommended items for you:</h1>
+
+<div *ngFor="let item of items">
+  <app-browse-item [itemDetails]="item"></app-browse-item>
+</div>
