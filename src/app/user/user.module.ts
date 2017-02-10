@@ -11,6 +11,7 @@ import {ItemRecommendationComponent} from "./browse-item-details/item-details/it
 import { AddItemComponent } from './add-item/add-item.component';
 import {FormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
+import {AgmCoreModule} from "angular2-google-maps/core";
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import {BrowserModule} from "@angular/platform-browser";
     SharedModule,
     RouterModule,
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    AgmCoreModule
   ],
   declarations: [
     AboutComponent,

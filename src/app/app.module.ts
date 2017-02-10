@@ -9,6 +9,7 @@ import {SharedModule} from "./shared/shared.module";
 import {LayoutModule} from "./layout/layout.module";
 
 import {RouterModule} from "@angular/router";
+import {AgmCoreModule} from "angular2-google-maps/core";
 // import {AppRouting} from "./app.routes";
 
 @NgModule({
@@ -19,7 +20,10 @@ import {RouterModule} from "@angular/router";
     HttpModule,
     SharedModule,
     LayoutModule,
-    RouterModule
+    RouterModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAH9RKhaaIYk5xMXSo6dKDD1LMhvi51cy4'
+    })
   ],
   declarations: [
     AppComponent
