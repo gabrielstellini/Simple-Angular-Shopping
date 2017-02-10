@@ -1,6 +1,11 @@
 //Span inside option is bold
 //Update dimentions to more realistic figures with cm
 
+@font-face {
+  font-family: 'gloucester-mt-extra-condensed';
+  src: url("../../../../assets/gloucester-mt-extra-condensed.TTF") format('truetype');
+}
+
 .add-to-cart{
   background-color: #082b41;
   color: white;
@@ -17,3 +22,6 @@
   color: black;
 }
 
+button{
+  font-family: "gloucester-mt-extra-condensed","Times New Roman", Times, serif;
+}

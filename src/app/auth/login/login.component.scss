@@ -1,6 +1,6 @@
-.container
-{
-  height: 80%;
+@font-face {
+  font-family: 'gloucester-mt-extra-condensed';
+  src: url("../../../assets/gloucester-mt-extra-condensed.TTF") format('truetype');
 }
 
 .login-box
@@ -12,20 +12,19 @@
   margin-right: 30%;
   margin-top: 80px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  z-index: 1;
 }
 
-h1
-{
+h1 {
   font-size: 40px;
-  font-family: "Gloucester MT Extra Condensed";
+  font-family: "gloucester-mt-extra-condensed","Times New Roman", Times, serif;
 }
 
 h3
 {
-  font-size: 20px;
-  position: relative;
-  margin-left: 15%;
+  position: absolute;
+  right: 0px;
+  width: 420px;
+  padding: 0px;
 }
 
 .top-div
@@ -36,62 +35,25 @@ h3
   margin-top: 50px;
 }
 
-
 .loginButton
 {
   background-color: #0b2943;
   color: white;
   font-size: 25px;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 80px;
   margin-left: 30%;
 }
 
-.emailClass
+.inputClass
 {
+  outline: none;
+  border: solid 1px #cccccc;
+
   position: relative;
-  margin-top: 80px;
+  margin-top: 50px;
+  border-radius: 0;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  border-radius: 0 !important;
-}
-
-//.passClass
-//{
-//  position: relative;
-//  margin-top: 10%;
-//  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-//}
-
-.passClass
-{
-  position: relative;
-  margin-top: 40px;
-  border-radius: 0 !important;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.emailClass:focus, .emailClass:active
-{
-  outline: none !important;
-}
-
-//.passClass:focus
-//{
-//  outline: none;
-//  border: solid #cccccc !important;
-//  -webkit-box-shadow: none !important;
-//  -moz-box-shadow: none !important;
-//
-//  position: relative;
-//  margin-top: 10%;
-//
-//  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
-//  border-radius: 0 !important;
-//}
-
-.loginButton:focus,.loginButton:active
-{
-  outline: none !important;
 }
 
 .loginButton:active
@@ -102,20 +64,14 @@ h3
 .loginForm
 {
   position: relative;
-  margin-right: 5%;
   margin-left: 18%;
+  margin-top: 20px;
 }
 
-.blue-line-div
+.title-div
 {
   position: relative;
   height: 80px;
   width: 655px;
-  z-index: 2;
-  border-bottom-color: #0b2943!important;
-  outline: #0b2943!important;
-
+  border-bottom: 1px solid #0b2943;
 }
-
-
-

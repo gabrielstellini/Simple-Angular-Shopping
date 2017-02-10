@@ -1,9 +1,9 @@
 
 <div class="container">
-  <div class="z-depth-3 login-box">
+  <div class="login-box">
     <div class="row top-div">
 
-      <div class="blue-line-div">
+      <div class="title-div">
         <div class="col-xs-6 col-md-4">
           <h1>LOGIN</h1>
         </div>
@@ -14,12 +14,12 @@
 
       <form>
         <div class="form-group-lg col-md-8 loginForm">
-          <input type="email" class="form-control formInput emailClass" placeholder="Email" [(ngModel)]="loginData.username"
+          <input type="email" class="form-control formInput inputClass" placeholder="Email" [(ngModel)]="loginData.username"
                  name="usernameField">
-          <br>
-          <input type="password" class="form-control formInput passClass" placeholder="Password" [(ngModel)]="loginData.password"
+
+          <input type="password" class="form-control formInput inputClass" placeholder="Password" [(ngModel)]="loginData.password"
                  name="password">
-          <br>
+
           <button (click)=attemptLogin() class="btn waves-effect waves-light col-xs-6 col-md-4 loginButton">Login</button>
         </div>
       </form>

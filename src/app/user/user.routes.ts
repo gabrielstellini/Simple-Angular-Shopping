@@ -3,6 +3,7 @@ import {BrowseItemDetailsComponent} from "./browse-item-details/browse-item-deta
 import {BrowseItemsComponent} from "./browse-items/browse-items.component";
 import {AboutComponent} from "./about/about.component";
 import {ContactComponent} from "./contact/contact.component";
+import {AddItemComponent} from "./add-item/add-item.component";
 
 export const userRoutes: Routes = [
   {
@@ -20,6 +21,11 @@ export const userRoutes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'add',
+    component: AddItemComponent,
+    // canActivate:
   }
 ];
 
