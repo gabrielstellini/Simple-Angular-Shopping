@@ -2,7 +2,6 @@
   <div class="title">
     <h1>CREDIT CARD DETAILS</h1>
   </div>
-
   <form>
     <div class="form-group">
       <select class="form-control" [(ngModel)]="cardDetails.gender" name="genderSelect">
@@ -17,7 +16,6 @@
     </div>
 
     <div class="form-group">
-
       <input type="month" [(ngModel)]="cardDetails.date" name="date"/>
       <input type="number" class="form-control formInput" placeholder="CVV code" [(ngModel)]="cardDetails.cvv"
              name="cardNumber" required>
