@@ -30,9 +30,6 @@ export class ItemDetailsComponent implements OnInit {
   }
 
   refreshData(){
-
-    debugger;
-
     this.activatedRoute.params.subscribe(param => {
       this.itemID = param['id'];
     });

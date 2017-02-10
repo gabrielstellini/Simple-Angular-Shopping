@@ -20,7 +20,6 @@ export class BrowseItemComponent implements OnInit {
 
 
   changeURL(){
-    debugger;
     this.router.navigate(["item",this.itemDetails.itemID]);
   }
 
