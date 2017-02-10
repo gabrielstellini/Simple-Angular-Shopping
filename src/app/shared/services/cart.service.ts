@@ -41,10 +41,10 @@ export class CartService {
 
       //TODO: remove in final - should be handled in DB
       let index = this.cartItems.indexOf(itemID);
-      debugger;
+
       if (index > -1) {
         this.cartItems.splice(index, 1);
-        debugger;
+
       }
       console.log(this.cartItems)
 
