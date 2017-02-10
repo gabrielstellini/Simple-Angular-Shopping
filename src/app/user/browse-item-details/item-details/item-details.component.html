@@ -3,7 +3,7 @@
   <div class = "left">
     <img [src]="itemDetails.imgUrl" class="img-responsive"
          alt="itemDetails.title">
-    <button class = "add-to-cart" (click)="addToCart()"><strong>ADD T0 CART</strong></button>
+    <button class = "add-to-cart" (click)="addToCart()">ADD T0 CART</button>
 
     <h4 class = "price">{{itemDetails.price | currency:'EUR':true:'1.1-2'}}</h4>
   </div>
