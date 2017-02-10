@@ -1,18 +1,16 @@
 <nav class="navbar navbar-default">
-  <div class="container">
     <div class="navbar-header">
       <a routerLink="/home">
         <img src="../../../../assets/Logo.png">
       </a>
     </div>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav navbar-left">
       <!--<li routerLinkActive="['active']"> <a routerLink="['one']">One</a></li>-->
-      <li><a class = "mainMenu" routerLink="/items/category/oil" routerLinkActive="activeMenu"><strong>BROWSE</strong></a></li>
+      <li><a class = "mainMenu" routerLink="/items" routerLinkActive="activeMenu"><strong>BROWSE</strong></a></li>
       <li><a class = "mainMenu" routerLink="/cart"  routerLinkActive="activeMenu"><strong>CART</strong></a></li>
       <li><a class = "mainMenu" routerLink="/login" routerLinkActive="activeMenu"><strong>SIGNUP/LOGIN</strong></a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <app-search></app-search>
     </ul>
-  </div>
 </nav>

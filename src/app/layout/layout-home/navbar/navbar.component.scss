@@ -4,19 +4,6 @@ a{
   font-size: 25px;
 
 }
-//
-//.mainMenu:hover
-//{
-//  color: #7dc6e7 !important;
-//}
-//
-//.mainMenu:focus {
-// color: #7dc6e7 !important;
-//}
-//
-//.mainMenu:active {
-//  color: #7dc6e7 !important;
-//}
 
 .mainMenu
 {
@@ -24,13 +11,18 @@ a{
   top: 10px;
 }
 
-.container{
+.navbar-left{
  padding-left: 0px ;
   margin-left: 0px ;
-  padding-right: 0px ;
+
+}
+
+.navbar-right{
+  padding-right: 10px ;
   margin-right: 0px ;
 }
 
 .activeMenu{
   color: #7dc6e7 !important;
 }
+
