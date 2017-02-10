@@ -9,6 +9,7 @@ import {ItemService} from "./services/item.service";
 import {AuthGuardService} from "./services/auth-guard.service";
 import {AuthService} from "./services/auth.service";
 import {CartService} from "./services/cart.service";
+import {RecommendedItemService} from "./services/recommended-item.service";
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import {CartService} from "./services/cart.service";
     ItemService,
     AuthGuardService,
     AuthService,
-    CartService
+    CartService,
+    RecommendedItemService
   ]
 })
 export class SharedModule { }
