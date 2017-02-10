@@ -9,17 +9,11 @@ export class RecommendedItemService {
   }
 
   getItems(item:ItemDetailDto){
-    let result:ItemDetailDto[] = this.itemService.getAllItems(item.category);
 
-    let index = result.indexOf(item, 0);
-    if (index > -1) {
-      result.splice(index, 1);
-    }
+    return this.itemService
+      .getAllItems(item.category)
+      .filter( (currentItem, index) => currentItem.itemID !== item.itemID && index < 3);
 
-
-    let demo = result.slice(0,3);
-    debugger;
-    return result.slice(0,3);
   }
 
 
