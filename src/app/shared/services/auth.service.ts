@@ -38,7 +38,7 @@ export class AuthService {
     return 404;
   }
 
-  signout(){
+  logout(){
     this.currUser = {
       username:"",
       authGuid:"",
