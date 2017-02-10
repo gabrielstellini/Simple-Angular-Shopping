@@ -1,17 +1,17 @@
-.container{
+.backgroundDiv{
   background-image: url("../../../../assets/FOOTER.jpg");
   width: 100%;
 }
 
-.footer-menu{
-  color: white !important;
+a{
+  //color: white !important;
   font-size: 15px;
 }
 
-.footer-menu:hover{
-  color: #7dc6e7 !important;
+a:hover{
+  color: #7dc6e7;
 }
 
-.footer-menu:active{
-  color: #7dc6e7 !important;
+a:active{
+  color: #7dc6e7;
 }
