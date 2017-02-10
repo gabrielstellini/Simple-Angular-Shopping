@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="title">
+    <h1>CREDIT CARD DETAILS</h1>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <select class="form-control" [(ngModel)]="cardDetails.gender" name="genderSelect">
+        <option value="Mr">Mr</option>
+        <option value="Ms">Ms</option>
+      </select>
+
+      <input type="text" class="form-control formInput" placeholder="Name On Card" [(ngModel)]="cardDetails.cardName"
+             name="cardName" required>
+      <input type="number" class="form-control formInput" placeholder="Credit Card Number" [(ngModel)]="cardDetails.cardNumber"
+             name="cardNumber" required>
+    </div>
+
+    <div class="form-group">
+
+      <input type="month" [(ngModel)]="cardDetails.date" name="date"/>
+      <input type="number" class="form-control formInput" placeholder="CVV code" [(ngModel)]="cardDetails.cvv"
+             name="cardNumber" required>
+    </div>
+
+    <button (click)="attemptCheckout()" class="btn btn-default">CHECKOUT</button>
+  </form>
+</div>

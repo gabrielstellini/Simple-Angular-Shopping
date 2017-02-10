@@ -1,5 +1,2 @@
-<p>
-  {{totalCost}}
-</p>
-
-<!--<a routerLink="/creditCard">Check out</a>-->
+<h1>TOTAL: {{totalCost | currency:'EUR':true:'1.1-2'}}</h1>
+<h1><a routerLink="/pay">CHECK OUT</a></h1>

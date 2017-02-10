@@ -21,8 +21,6 @@ export const layoutRoutes: Routes = [
   { path: '**', redirectTo: 'items/category/oil' }
 ];
 
-export const layoutRouting = RouterModule.forChild(layoutRoutes);
-
 @NgModule({
   imports: [
     RouterModule.forRoot(layoutRoutes)

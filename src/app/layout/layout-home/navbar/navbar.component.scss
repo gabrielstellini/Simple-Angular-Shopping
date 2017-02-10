@@ -1,5 +1,5 @@
 a{
-  font-family: "Gloucester MT Extra Condensed";
+  font-family: "Times New Roman";
   color: black !important;
   font-size: 25px;
 
@@ -11,6 +11,10 @@ a{
 }
 
 .mainMenu:focus {
+ color: #7dc6e7 !important;
+}
+
+.mainMenu:active {
   color: #7dc6e7 !important;
 }
 
@@ -19,5 +23,18 @@ a{
   position: relative;
   top: 10px;
 }
+
+.container{
+ padding-left: 0px ;
+  margin-left: 0px ;
+  padding-right: 0px ;
+  margin-right: 0px ;
+
+
+}
+
+//.active{
+//  color: #082b41 !important;
+//}
 
 

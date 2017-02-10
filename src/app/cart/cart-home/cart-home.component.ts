@@ -12,19 +12,14 @@ export class CartHomeComponent implements OnInit {
 
 
   items:ItemDetailDto[];
+  totalPrice:number;
 
   constructor(private itemService:ItemService,
               private cartService:CartService) {
-    this.items = this.getItems();
+    this.items = this.cartService.getItems();
+    this.totalPrice = this.cartService.calculateTotalPrice();
   }
 
   ngOnInit() {
   }
-
-  getItems():ItemDetailDto[]{
-    let itemIDs:string[] = this.cartService.findAll();
-    let items:ItemDetailDto[] = this.itemService.getItemsByID(itemIDs)
-    return items;
-  }
-
 }
