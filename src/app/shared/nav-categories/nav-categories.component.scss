@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'gloucester-mt-extra-condensed';
+  src: url("../../../assets/gloucester-mt-extra-condensed.TTF") format('truetype');
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -5,11 +10,11 @@ ul {
 }
 
 .title{
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
   font-size: 25px;
   color: black;
   position: relative;
-  left: 70px;
+  left: 10px;
 }
 
 a{

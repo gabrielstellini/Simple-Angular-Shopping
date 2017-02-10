@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'gloucester-mt-extra-condensed';
+  src: url("../../../assets/gloucester-mt-extra-condensed.TTF") format('truetype');
+}
+
 .container
 {
   height: 80%;
@@ -12,14 +17,13 @@
   margin-right: 30%;
   margin-top: 80px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  z-index: 1;
 }
 
-h1
-{
+h1 {
   font-size: 40px;
-  font-family: "Gloucester MT Extra Condensed";
+  font-family: "gloucester-mt-extra-condensed","Times New Roman", Times, serif;
 }
+
 
 h3
 {
@@ -55,13 +59,6 @@ h3
   border-radius: 0 !important;
 }
 
-//.passClass
-//{
-//  position: relative;
-//  margin-top: 10%;
-//  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-//}
-
 .passClass
 {
   position: relative;
@@ -74,20 +71,6 @@ h3
 {
   outline: none !important;
 }
-
-//.passClass:focus
-//{
-//  outline: none;
-//  border: solid #cccccc !important;
-//  -webkit-box-shadow: none !important;
-//  -moz-box-shadow: none !important;
-//
-//  position: relative;
-//  margin-top: 10%;
-//
-//  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
-//  border-radius: 0 !important;
-//}
 
 .loginButton:focus,.loginButton:active
 {
@@ -114,7 +97,6 @@ h3
   z-index: 2;
   border-bottom-color: #0b2943!important;
   outline: #0b2943!important;
-
 }
 
 

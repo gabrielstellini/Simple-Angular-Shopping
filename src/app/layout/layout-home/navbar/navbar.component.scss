@@ -1,8 +1,11 @@
-a{
-  font-family: "Times New Roman";
-  color: black;
-  font-size: 25px;
+@font-face {
+  font-family: 'gloucester-mt-extra-condensed';
+  src: url("../../../../assets/gloucester-mt-extra-condensed.TTF") format('truetype');
+}
 
+a{
+  font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
+  font-size: 25px;
 }
 
 .mainMenu
