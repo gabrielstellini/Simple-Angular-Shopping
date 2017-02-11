@@ -10,14 +10,15 @@ export class AddItemComponent implements OnInit {
 
   itemDetail:ItemDetailDto =
     {
-    title: "",
-    author: "",
-    imgUrl: '',
-    itemID: "",
-    price: undefined,
-    description: "",
-    category: undefined
-  };
+      title: "",
+      artist: "",
+      imgUrl: '',
+      itemID: "",
+      price: undefined,
+      description: "",
+      category: undefined,
+      size:undefined
+    };
 
   constructor() { }
 
