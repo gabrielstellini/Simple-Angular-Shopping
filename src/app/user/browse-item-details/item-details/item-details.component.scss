@@ -7,21 +7,71 @@
 }
 
 .add-to-cart{
-  background-color: #082b41;
-  color: white;
+  background-color: transparent;
+  color: black;
   font-size: 25px;
+  border: 0px;
+  position: relative;
+  top: 5px;
 }
 
 .price{
   font-size: 25px;
   color: black;
+  position: relative;
+  left: 415px;
+  bottom: 35px;
 }
 
 .author-title{
-  font-size: 25px !important;
+  //font-family: "gloucester-mt-extra-condensed","Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px !important;
   color: black;
 }
 
 button{
   font-family: "gloucester-mt-extra-condensed","Times New Roman", Times, serif;
+}
+
+.img-responsive{
+  height: 70%;
+  width: 70%;
+}
+
+.item-recomendation{
+  position: absolute;
+  bottom: 5px;
+  left: 380px;
+  //position: relative;
+  //right: 735px;
+  //top: 300px;
+
+}
+
+.author{
+  font-size: 20px;
+}
+
+.description{
+  font-size: 20px;
+}
+
+.details{
+  position: relative;
+  left: 520px;
+  bottom: 370px;
+}
+
+.size{
+  font-size: 20px;
+}
+
+.form-control{
+ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  width: 500px;
+}
+
+.big{
+  font-size: 25px;
 }
