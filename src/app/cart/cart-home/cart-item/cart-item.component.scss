@@ -26,11 +26,14 @@
 }
 
 .painting-price{
-  //font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
 }
 
-.painting-author{
+.painting-description{
+  width: 400px ;
+}
+
+.painting-artist{
   position: relative;
   left: 10px;
   bottom: 5px;

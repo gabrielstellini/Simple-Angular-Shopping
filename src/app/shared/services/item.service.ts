@@ -6,30 +6,34 @@ export class ItemService {
   private items :Array<ItemDetailDto> = [
     {
       title: 'Misty night',
-      author: 'Leonid Afremov',
+      artist: 'Leonid Afremov',
       imgUrl: 'http://i.imgur.com/nlvE8LG.jpg',
       itemID: "1",
       price: 120,
       description: "Impressionistic art piece on canvas, using only a palette knife",
-      category: 'oil'
+      category: 'oil',
+      size:undefined
+
     },
     {
       title: 'Misty night',
-      author: 'Leonid Afremov',
+      artist: 'Leonid Afremov',
       imgUrl: 'http://i.imgur.com/nlvE8LG.jpg',
       itemID: "2",
       price: 22,
       description: "Impressionistic art piece on canvas, using only a palette knife",
-      category: 'oil'
+      category: 'oil',
+      size:undefined
     },
     {
       title: 'Misty night',
-      author: 'Leonid Afremov',
+      artist: 'Leonid Afremov',
       imgUrl: 'http://i.imgur.com/nlvE8LG.jpg',
       itemID: "3",
       price: 55,
       description: "Impressionistic art piece on canvas, using only a palette knife",
-      category: 'oil'
+      category: 'oil',
+      size:undefined
     },
   ];
 
