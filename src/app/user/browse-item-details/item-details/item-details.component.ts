@@ -22,7 +22,6 @@ export class ItemDetailsComponent implements OnInit {
     router.events.subscribe((val) => {
       this.refreshData();
     });
-
   }
 
   ngOnInit() {
@@ -33,13 +32,12 @@ export class ItemDetailsComponent implements OnInit {
     this.activatedRoute.params.subscribe(param => {
       this.itemID = param['id'];
     });
-
     this.itemDetails = this.itemService.getItem(this.itemID);
   }
 
   addToCart(){
+    //TODO: Add to cart should send item, not an item ID, or alternatively itemID and size (not just size)
     this.cartService.addToCart(this.itemID);
     console.log(this.cartService.findAll());
   }
-
 }
