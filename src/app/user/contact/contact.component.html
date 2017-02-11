@@ -1,10 +1,16 @@
 <div class="container">
-  <h3><span class="bold">Address:</span> Via Licola Patria 115</h3>
-  <h3><span class="bold">Telephone:</span> 22913100</h3>
-  <h3><span class="bold">Email:</span> contactus@springfield.com</h3>
+  <div class="contact_us">
+    <div class="col-md-6 info">
+      <h3><span class="bold">Address:</span> Via Licola Patria 115</h3>
+      <h3><span class="bold">Telephone:</span> 22913100</h3>
+      <h3><span class="bold">Email:</span> contactus@springfield.com</h3>
+    </div>
 
-  <sebm-google-map [latitude]="lat" [longitude]="lng">
-    <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
-  </sebm-google-map>
+    <div class="col-md-6 map">
+      <sebm-google-map [latitude]="lat" [longitude]="lng">
+        <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+      </sebm-google-map>
+    </div>
 
+  </div>
 </div>
