@@ -9,6 +9,8 @@ import {layoutRoutes, LayoutRoutingModule} from "./layout.routes";
 import { RouterModule} from "@angular/router";
 import {AuthModule} from "../auth/auth.module";
 import {CartModule} from "../cart/cart.module";
+import {BrowserModule} from "@angular/platform-browser";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   imports: [
@@ -17,7 +19,9 @@ import {CartModule} from "../cart/cart.module";
     AuthModule,
     CartModule,
     LayoutRoutingModule,
-    RouterModule
+    RouterModule,
+    BrowserModule,
+    FormsModule
   ],
   declarations: [
     FooterComponent,
@@ -26,8 +30,7 @@ import {CartModule} from "../cart/cart.module";
     LayoutHomeComponent
   ],
   exports:[
-    LayoutHomeComponent,
-
+    LayoutHomeComponent
   ],
 })
 
