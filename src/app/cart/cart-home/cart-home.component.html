@@ -1,2 +1,7 @@
-<app-cart-item *ngFor="let item of items" [item]="item" ></app-cart-item>
-<app-cart-detail [totalCost]="totalPrice" ></app-cart-detail>
+<div class="box">
+  <div class="cart">
+    <app-cart-item *ngFor="let item of items" [item]="item" ></app-cart-item>
+    <app-cart-detail [totalCost]="totalPrice" ></app-cart-detail>
+  </div>
+</div>
+
