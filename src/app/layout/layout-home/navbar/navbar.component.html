@@ -6,10 +6,11 @@
     </div>
     <ul class="nav navbar-nav navbar-left">
       <!--<li><a class = "mainMenu" [routerLink]="'/items'" routerLinkActive="activeMenu"><strong>BROWSE</strong></a></li>-->
-      <li><a class = "mainMenu" routerLink="/items" routerLinkActive="activeMenu">BROWSE</a></li>
-      <li><a class = "mainMenu" routerLink="/cart"  routerLinkActive="activeMenu">CART</a></li>
-      <li *ngIf="isLoggedIn()"><a class = "mainMenu" (click)="logout()" routerLink="/login" routerLinkActive="activeMenu">LOGOUT</a></li>
-      <li *ngIf="!isLoggedIn()"><a class = "mainMenu" routerLink="/login" routerLinkActive="activeMenu">SIGNUP/LOGIN</a></li>
+      <li><a class = "mainMenu" routerLink="/items" routerLinkActive="activeMenu">Browse</a></li>
+      <li><a class = "mainMenu" routerLink="/cart"  routerLinkActive="activeMenu">Cart</a></li>
+      <li *ngIf="isLoggedIn()"><a class = "mainMenu" routerLink="/history" routerLinkActive="activeMenu">Purchase History</a></li>
+      <li *ngIf="isLoggedIn()"><a class = "mainMenu" (click)="logout()" routerLink="/login" routerLinkActive="activeMenu">Logout</a></li>
+      <li *ngIf="!isLoggedIn()"><a class = "mainMenu" routerLink="/login" routerLinkActive="activeMenu">Signup/Login</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <app-search></app-search>

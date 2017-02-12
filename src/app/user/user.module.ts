@@ -13,6 +13,7 @@ import {FormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
 import {AgmCoreModule} from "angular2-google-maps/core";
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { PurchaseHistoryComponent } from './purchase-history/purchase-history.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     BrowseItemDetailsComponent,
     ItemRecommendationComponent,
     AddItemComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    PurchaseHistoryComponent
   ],
   exports: [
     AboutComponent,
