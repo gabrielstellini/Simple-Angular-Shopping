@@ -4,20 +4,19 @@
   font-size: 30px;
   color: black;
   position: relative;
-  left: 400px;
   bottom: 40px;
   font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
+  background-color: transparent;
+  border: 0px;
+  top: 5px;
 }
 
 .total{
   color: black;
   position: relative;
-  left: 920px;
-  top: 22px;
   font-family: 'gloucester-mt-extra-condensed',"Times New Roman", Times, serif;
+  font-size: 25px;
+  float: right;
 }
 
-.right{
-position: relative;
-  right: 20px;
-}
+
