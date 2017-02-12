@@ -4,7 +4,7 @@
 {
   position: relative;
   width: 60%;
-  height: 80%;
+  height: 75%;
   margin-left: 22%;
   margin-right: 30%;
   margin-top: 80px;
@@ -20,14 +20,15 @@ h1 {
 h3
 {
   position: absolute;
-  right: 0px;
   width: 420px;
   padding: 0px;
+  font-size: 20px;
+  bottom: -69px;
+  right:-55px;
 }
 
 .top-div
 {
-  position: relative;
   bottom: 20%;
   margin-left: 2%;
   margin-top: 50px;
@@ -40,7 +41,8 @@ h3
   font-size: 25px;
   margin-top: 40px;
   margin-bottom: 80px;
-  margin-left: 30%;
+  margin-left: 160px;
+  top: 50px;
 }
 
 .inputClass
@@ -49,7 +51,7 @@ h3
   border: solid 1px #cccccc;
 
   position: relative;
-  margin-top: 50px;
+  margin: 30px 20px 0px 20px;
   border-radius: 0;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
 }
@@ -62,7 +64,7 @@ h3
 .loginForm
 {
   position: relative;
-  margin-left: 18%;
+  margin-left: 80px;
   margin-top: 20px;
 }
 
@@ -72,4 +74,5 @@ h3
   height: 80px;
   width: 655px;
   border-bottom: 1px solid #0b2943;
+  bottom: 50px;
 }
