@@ -12,6 +12,7 @@ import { AddItemComponent } from './add-item/add-item.component';
 import {FormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
 import {AgmCoreModule} from "angular2-google-maps/core";
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import {AgmCoreModule} from "angular2-google-maps/core";
     ItemDetailsComponent,
     BrowseItemDetailsComponent,
     ItemRecommendationComponent,
-    AddItemComponent
+    AddItemComponent,
+    SearchResultsComponent
   ],
   exports: [
     AboutComponent,
@@ -37,7 +39,8 @@ import {AgmCoreModule} from "angular2-google-maps/core";
     BrowseItemsComponent,
     BrowseItemDetailsComponent,
     ItemRecommendationComponent,
-    AddItemComponent
+    AddItemComponent,
+    SearchResultsComponent
   ]
 })
 export class UserModule { }

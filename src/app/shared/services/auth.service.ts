@@ -28,7 +28,7 @@ export class AuthService {
       this.currUser.authGuid = "e58607e4-af33-46ed-8fee-42225c34c2c5";
       return 202;
     }
-    else if(email === "demo@321.321"){
+    else if(email === "2@2.2"){
       this.currUser.username = "2";
       this.currUser.isAdmin = true;
       this.currUser.authGuid = "5e5325df-6b26-48fc-b44a-0497bb09209f";
@@ -51,6 +51,13 @@ export class AuthService {
       return false;
     }
     return true;
+  }
+
+  isAdmin():boolean{
+    if(this.currUser.username === "" || this.currUser.username == null){
+      return false;
+    }
+    else return this.currUser.isAdmin;
   }
 
   register(registerData:UserDetailInterface){

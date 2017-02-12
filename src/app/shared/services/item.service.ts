@@ -57,4 +57,9 @@ export class ItemService {
     }
     return result;
   }
+
+  findAll(searchQuery:string):ItemDetailDto[]{
+    //TODO: DATABASE QUERY HERE
+    return this.items;
+  }
 }

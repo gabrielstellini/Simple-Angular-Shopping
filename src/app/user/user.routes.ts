@@ -4,6 +4,8 @@ import {BrowseItemsComponent} from "./browse-items/browse-items.component";
 import {AboutComponent} from "./about/about.component";
 import {ContactComponent} from "./contact/contact.component";
 import {AddItemComponent} from "./add-item/add-item.component";
+import {AdminGuardService} from "../shared/services/admin-guard.service";
+import {SearchResultsComponent} from "./search-results/search-results.component";
 
 export const userRoutes: Routes = [
   {
@@ -25,7 +27,11 @@ export const userRoutes: Routes = [
   {
     path: 'add',
     component: AddItemComponent,
-    // canActivate:
+    canActivate: [AdminGuardService]
+  },
+  {
+    path: 'search/:searchQuery',
+    component:  SearchResultsComponent,
   }
 ];
 

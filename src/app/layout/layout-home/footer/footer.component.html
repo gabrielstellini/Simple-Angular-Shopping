@@ -1,9 +1,11 @@
 <div class="backgroundDiv">
   <div class="navbar navbar-default navbar-fixed-bottom">
 
-    <ul class="nav navbar-nav navbar-left">
-      <li><a routerLinkActive="active" routerLink="/add">Add item</a></li>
-    </ul>
+    <div *ngIf="isAdmin()">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a routerLinkActive="active" routerLink="/add">Add item</a></li>
+      </ul>
+    </div>
 
     <ul class="nav navbar-nav navbar-right">
       <li><a routerLinkActive="active" routerLink="/about">About</a></li>

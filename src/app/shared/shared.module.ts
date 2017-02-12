@@ -10,6 +10,7 @@ import {AuthGuardService} from "./services/auth-guard.service";
 import {AuthService} from "./services/auth.service";
 import {CartService} from "./services/cart.service";
 import {RecommendedItemService} from "./services/recommended-item.service";
+import {AdminGuardService} from "./services/admin-guard.service";
 
 @NgModule({
   imports: [
@@ -28,6 +29,7 @@ import {RecommendedItemService} from "./services/recommended-item.service";
   providers:[
     ItemService,
     AuthGuardService,
+    AdminGuardService,
     AuthService,
     CartService,
     RecommendedItemService
