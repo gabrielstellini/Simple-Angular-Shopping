@@ -1,5 +1,11 @@
-<h1>Showing results for: {{searchString}}</h1>
+<div class="title">
+  <h1>Showing results for: {{searchString}}</h1>
+</div>
 
-<app-browse-item *ngFor="let itemDetail of itemDetailArr"
-                 [itemDetails]= "itemDetail">
-</app-browse-item>
+
+<div class="search_results">
+  <app-browse-item *ngFor="let itemDetail of itemDetailArr"
+                   [itemDetails]= "itemDetail">
+  </app-browse-item>
+</div>
+
