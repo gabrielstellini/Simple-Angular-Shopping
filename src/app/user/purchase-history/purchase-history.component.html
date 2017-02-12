@@ -1,5 +1,10 @@
-<h1> Purchase history:</h1>
+<div class="title">
+  <h1>Purchase history:</h1>
+</div>
 
-<app-browse-item *ngFor="let itemDetail of itemDetailArr"
-                 [itemDetails]= "itemDetail">
-</app-browse-item>
+
+<div class="purchaseHistoryResult">
+  <app-browse-item *ngFor="let itemDetail of itemDetailArr"
+                   [itemDetails]= "itemDetail">
+  </app-browse-item>
+</div>

@@ -60,6 +60,10 @@ export class ItemService {
 
   findAll(searchQuery:string):ItemDetailDto[]{
     //TODO: DATABASE QUERY HERE
-    return this.items;
+    let result:ItemDetailDto[] = [];
+    this.items.map(item =>{result.push(item)});
+    this.items.map(item =>{result.push(item)});
+    this.items.map(item =>{result.push(item)});
+    return result;
   }
 }

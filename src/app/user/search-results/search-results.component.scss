@@ -11,8 +11,13 @@ h1
 
 .search_results
 {
-  position: relative;
-  width: 900px;
-  margin-left: 400px;
+
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 40px;
+  flex-wrap: wrap;
+}
+
+app-browse-item{
+  width: 30%;
 }
