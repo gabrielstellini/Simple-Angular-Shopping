@@ -6,6 +6,8 @@ import {ContactComponent} from "./contact/contact.component";
 import {AddItemComponent} from "./add-item/add-item.component";
 import {AdminGuardService} from "../shared/services/admin-guard.service";
 import {SearchResultsComponent} from "./search-results/search-results.component";
+import {PurchaseHistoryComponent} from "./purchase-history/purchase-history.component";
+import {AuthGuardService} from "../shared/services/auth-guard.service";
 
 export const userRoutes: Routes = [
   {
@@ -32,6 +34,11 @@ export const userRoutes: Routes = [
   {
     path: 'search/:searchQuery',
     component:  SearchResultsComponent,
+  },
+  {
+    path: 'history',
+    component:  PurchaseHistoryComponent,
+    canActivate: [AuthGuardService]
   }
 ];
 

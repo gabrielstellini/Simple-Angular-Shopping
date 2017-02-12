@@ -42,7 +42,8 @@ import { PurchaseHistoryComponent } from './purchase-history/purchase-history.co
     BrowseItemDetailsComponent,
     ItemRecommendationComponent,
     AddItemComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    PurchaseHistoryComponent
   ]
 })
 export class UserModule { }
