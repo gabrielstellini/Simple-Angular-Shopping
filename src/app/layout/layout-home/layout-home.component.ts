@@ -7,16 +7,9 @@ import {Router} from "@angular/router";
   styleUrls: ['layout-home.component.scss']
 })
 export class LayoutHomeComponent implements OnInit {
-
   constructor(private router: Router) { }
-
   ngOnInit() {
-
-    for (var i = 0; i < this.router.config.length; i++) {
-      var routePath:string = this.router.config[i].path;
-      console.log(routePath);
-    }
-
   }
+
 
 }
