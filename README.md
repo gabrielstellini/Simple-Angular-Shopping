@@ -3,9 +3,10 @@ Hi there, welcome to our website! This is an angular 2 based e-commerce website 
 It makes use of the following technologies to achieve this:
 
 MongoDB
-Angular 2
+PHP 5.6/Apache with Mongodb driver
+Angular 4
 
-This project was created using [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Installation/Hosting
 To host the website, use the following commands:
