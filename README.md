@@ -3,6 +3,7 @@ Hi there, welcome to our website! This is an angular 2 based e-commerce website 
 It makes use of the following technologies (as per the module requirements) to achieve this:
 
 MongoDB and PHP 5.6 as a backend
+
 Angular 4 single page app as the front end
 
 ## Installation/Hosting
